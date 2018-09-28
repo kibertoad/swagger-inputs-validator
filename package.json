@@ -26,9 +26,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/michwii/swagger-inputs-validator/issues"
+    "url": "https://github.com/kibertoad/swagger-inputs-validator/issues"
   },
-  "homepage": "https://github.com/michwii/swagger-inputs-validator#readme",
+  "homepage": "https://github.com/kibertoad/swagger-inputs-validator#readme",
   "scripts": {
     "test": "mocha test"
   },

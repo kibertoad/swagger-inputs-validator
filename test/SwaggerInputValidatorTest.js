@@ -3,7 +3,7 @@ var express = require('express');
 var assert = require('assert');
 var bodyParser = require('body-parser');
 
-var swaggerInputValidator = require('../module.js');
+var swaggerInputValidator = require('../index.js');
 
 describe('Wrong instanciations', function() {
   var swaggerFile;

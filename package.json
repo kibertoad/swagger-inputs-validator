@@ -1,22 +1,11 @@
 {
-  "dependencies": {
-    "body-parser": "^1.14.2",
-    "express": "^4.13.3"
-  },
-  "name": "swagger-inputs-validator",
-  "version": "1.0.8",
+  "name": "swagger-request-validator",
+  "version": "2.0.0",
   "description": "Lightweight Express middleware that allows the validation of incoming parameters.",
-  "main": "module.js",
-  "devDependencies": {
-    "mocha": "2.3.4",
-    "supertest": "1.1.0"
-  },
-  "scripts": {
-    "test": "mocha test"
-  },
+  "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/michwii/swagger-inputs-validator.git"
+    "url": "git+https://github.com/kibertoad/swagger-inputs-validator.git"
   },
   "keywords": [
     "swagger",
@@ -28,9 +17,26 @@
     "middleware"
   ],
   "author": "michwii",
+  "contributors": [
+    {
+      "name": "Igor Savin",
+      "email": "kibertoad@gmail.com",
+      "url": "https://github.com/kibertoad"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/michwii/swagger-inputs-validator/issues"
   },
-  "homepage": "https://github.com/michwii/swagger-inputs-validator#readme"
+  "homepage": "https://github.com/michwii/swagger-inputs-validator#readme",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mocha": "^5.2.0",
+    "supertest": "^3.3.0"
+  }
 }

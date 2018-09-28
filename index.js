@@ -149,8 +149,11 @@ const getErrors = function (swaggerParameters, queryParameters, pathParameters, 
                     }
                     //We control now the authorized values present within enum
                     if (parameter.enum && parameter.enum.indexOf(queryParameters[parameter.name]) === -1) {
-                        errorsToReturn.push(new Error("Parameter : " + parameter.name + " has an unauthorized value."));
-                    }
+                        // Ignore empty non-mandatory params
+                        if (queryParameters[parameter.name] || parameter.required === true) {
+                            errorsToReturn.push(new Error("Parameter : " + parameter.name + " has an unauthorized value."));
+                        }
+                        }
                 }
                 break;
             case "path":

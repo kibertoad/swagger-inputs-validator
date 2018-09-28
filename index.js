@@ -433,7 +433,7 @@ const getGeneriqueMiddleware = function (swaggerParameters) {
             res.status(400);
             if (thisReference._onError) {
                 //We call the onError private method giving him a context. This is why we are using onError.call
-                onError.call(thisReference, errorsToReturn, req, res);
+                onError.call(thisReference, errorsToReturn, req, res, next);
             } else {
                 next(errorsToReturn);
             }

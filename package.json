@@ -1,6 +1,6 @@
 {
   "name": "swagger-request-validator",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Lightweight Express middleware that allows the validation of incoming parameters.",
   "main": "index.js",
   "repository": {

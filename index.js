@@ -78,8 +78,8 @@ const SwaggerInputValidator = function (swagger, options) {
   @param req : the request
   @param res : the response
 */
-var onError = function(errors, req, res){
-  this._onError(errors, req, res);
+var onError = function(errors, req, res, next){
+  this._onError(errors, req, res, next);
 };
 
 /**
@@ -473,7 +473,7 @@ SwaggerInputValidator.prototype.all = function(){
       res.status(400);
       if(thisReference._onError){
         //We call the onError private method giving him a context. This is why we are using onError.call
-        onError.call(thisReference, errorsToReturn, req, res);
+        onError.call(thisReference, errorsToReturn, req, res, next);
       }else{
         next(errorsToReturn);
       }
